@@ -1,0 +1,10 @@
+<view class='contain'>
+    <view class='list'>
+        <text>微信头像</text>
+        <image src='{{userInfo.avatarUrl}}' class='head_icon'></image>
+    </view>
+    <view class='list'>
+        <text>微信昵称</text>
+        <text>代栋</text>
+    </view>
+</view>

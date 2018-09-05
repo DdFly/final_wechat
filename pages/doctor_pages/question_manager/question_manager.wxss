@@ -1,0 +1,36 @@
+/* pages/doctor_pages/question_manager/question_manager.wxss */
+.bg{
+    display: flex;
+    flex-direction: column;
+}
+.bg image{
+    width: 50rpx;
+    height: 50rpx;
+}
+
+.item>view{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.question{
+    border: 1px solid grey;
+    padding: 15rpx 30rpx 15rpx 30rpx;
+    margin-top: 30rpx;
+}
+
+.anwser{
+    margin-top: 30rpx;
+    margin-left: 100rpx;
+    margin-right: 50rpx;
+}
+.add_btn{
+    width: 400rpx;
+    height: 100rpx;
+    text-align: center;
+    text-align-last: center;
+    margin-top: 100rpx;
+    color: white;
+    background-color: green;
+}

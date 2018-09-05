@@ -1,0 +1,34 @@
+/* pages/prrvacy/privacy.wxss */
+.date{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 30rpx;
+    margin-left: 20rpx;
+}
+.date text{
+    margin-top: 20rpx;
+    font-size: 15px;
+    font-family: "黑体";
+    font-weight: bold;
+}
+
+.content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50rpx;
+}
+.content>text{
+    font-family: "正楷";
+    font-weight: bold;
+}
+.content textarea{
+    width: 100%;
+    height: 100%;
+    margin: 30rpx;
+}

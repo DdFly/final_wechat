@@ -1,0 +1,29 @@
+/* pages/IdSelect/idselect.wxss */
+/* .contain{
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    
+} */
+
+.btn{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40%;
+
+
+}
+.btn button{
+    width: 50%;
+    margin-bottom: 100rpx; 
+}
+
+.doc{
+    background-color: #00b12c;
+}
+.pat{
+    background-color: red;
+}

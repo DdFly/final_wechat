@@ -1,0 +1,13 @@
+
+<import src="../template/template"/>
+
+<view class='contain'>
+
+     <block wx:for="{{question}}" wx:for-item="item">
+
+        <template is="{{item.flag=='radio'?'question_radio':'question_check'}}" data="{{...item}}" >
+        </template>         
+
+    </block> 
+    <button bindtap='commit'>提交</button>
+</view>

@@ -1,0 +1,13 @@
+<!--pages/tab1/result/result.wxml-->
+<view class='bg'>
+    <text class='title'>预测结果</text>
+    <view>
+        <text>系统预测结果：</text>
+        <text class='result'>{{result1}}</text>
+    </view>
+    <view>
+        <text>医生意见:</text>
+        <text class='result'>{{result2}}</text>
+    </view>
+
+</view>

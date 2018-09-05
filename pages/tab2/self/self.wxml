@@ -1,0 +1,32 @@
+<view class='contain'>
+    <navigator url='../accinfo/accinfo' class='user' bindtap='toAccountInfo'>
+        <view>
+            <image src="{{userInfo.avatarUrl}}" class='user_head'></image>
+            <view class='user_info'>
+                <text class='name'>{{userInfo.nickName}}</text>
+                <text class='age'>{{age}}</text>
+            </view>
+        </view>       
+        <image src="{{right_arrow}}" class='arrow_pic'></image>
+    </navigator>
+    <view class='self_body'>
+        <navigator url='../userinfo/userinfo' class='body_item1 body_item' bindtap='toUserInfo'> 
+            <view>
+                <image class='self_img' src="{{self_userInfo}}"></image>
+                <text class='self_text'>用户信息</text>
+            </view> 
+            <image src="{{right_arrow}}" class='arrow_pic'></image>
+        </navigator>
+        <view class='slide'></view>  
+        <navigator url='../sysinfo/sysinfo' class='body_item2 body_item' bindtap='toSystemInfo'>
+            <view >
+                <image class='self_img' src="{{self_about}}"></image>
+                <text class='self_text'>关于</text>
+            </view>           
+            <image src="{{right_arrow}}" class='arrow_pic'></image>
+        </navigator>
+    
+    </view> 
+
+
+</view>

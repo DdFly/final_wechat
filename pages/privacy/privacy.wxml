@@ -1,0 +1,35 @@
+<!--pages/prrvacy/privacy.wxml-->
+<view>
+    <view class='date'>
+        <text>修订日期：{{date}}</text>
+        <text>生效日期：{{date}}</text>
+    </view>
+    <view class='content'>
+        <text>眩晕问诊小程序服务协议</text>
+        <textarea>"pages": [
+        "pages/IdSelect/idselect",
+        "pages/doctor_pages/Q_list/Q_list",
+        "pages/doctor_pages/patient_list/patient_list",
+        "pages/doctor_pages/disease_manage/disease_manage",
+        "pages/doctor_pages/D_index/D_index",
+        "pages/welcome/welcome",
+        "pages/zhuce/zhuce",
+        "pages/tab1/index/index",
+        "pages/tab2/self/self",
+        "pages/test/test",
+        "pages/logs/logs",
+        "pages/tab1/questionnaire/questionnaire",
+        "pages/tab2/sysinfo/sysinfo",
+        "pages/tab2/accinfo/accinfo",
+        "pages/tab2/userinfo/userinfo",
+        "pages/doctor_pages/doctor_check/doctor_check",
+        "pages/privacy/privacy"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#00b12c",
+        "navigationBarTitleText": "耳鼻喉预诊",
+        "navigationBarTextStyle": "white"
+    },</textarea>
+    </view>
+</view>

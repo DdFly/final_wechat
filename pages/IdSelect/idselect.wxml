@@ -1,0 +1,11 @@
+<!--pages/IdSelect/idselect.wxml-->
+
+
+<view class='container'>
+    <text class='prompt_text'>请选择您的身份：</text>
+    <view class='btn'>
+        <button class='doc' bindtap='doc'>我是医生</button>
+        <button class='pat' bindtap='pat'>我是患者</button>
+    
+    </view>
+</view>

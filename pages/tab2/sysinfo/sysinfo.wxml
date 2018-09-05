@@ -1,0 +1,5 @@
+<view class='container'>
+    <button bindtap='tap'>获取用户唯一标识</button>
+    <text>open_id:{{openid}}</text>
+    <text>session_key:{{sessionkey}}</text>
+</view>

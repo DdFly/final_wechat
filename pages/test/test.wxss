@@ -1,0 +1,38 @@
+.contain{
+    width: 100%;
+}
+
+
+.item1,.item2{
+  margin-top: 10rpx;
+}
+image{
+  width: 20rpx;
+  height: 20rpx;
+}
+.zi{
+  padding: 20rpx;
+  color: #333333;
+  font-size: 35rpx;
+  
+}
+.radio-group,.check-group{
+  border-top: 1rpx solid #d4d4d4; 
+  border-left: 1rpx solid #d4d4d4;       
+  border-right: 1rpx solid #d4d4d4; 
+  border-radius: 5rpx;
+  margin: 20rpx
+}
+.radio,.checkbox{
+  background: #ffffff;
+  border-bottom: 1rpx solid #d4d4d4;
+  padding: 15rpx
+}
+label{
+ color: #313131;
+ font-size: 28rpx;
+}
+.select{
+  color: #005aef;
+  font-size: 24rpx;
+}

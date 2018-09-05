@@ -1,0 +1,12 @@
+<!--pages/doctor_pages/pat_list/pat_list.wxml-->
+<import src="../../template/template"/>
+
+<view class='bg'>
+    <input class='search_pat' placeholder='搜索' placeholder-class='placeholder'></input>
+    <view class='list'>
+        <block wx:for="{{pat_list}}" wx:for-item="item">
+            <template is="patient_item" data="{{...item}}"></template>
+        </block>
+    </view>
+</view>
+ 

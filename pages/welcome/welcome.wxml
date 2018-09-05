@@ -1,0 +1,10 @@
+<!--index.wxml-->
+<view class="container">
+  <view class='userinfo'>
+    <image class='userinfo-avatar' src="{{userInfo.avatarUrl}}"></image>
+    <text class="userinfo-name">{{userInfo.nickName}}</text>
+  </view>
+  <view class="usermotto">
+    <button class="bt_login" bindtap='login'>确认登录</button>
+  </view>
+</view>

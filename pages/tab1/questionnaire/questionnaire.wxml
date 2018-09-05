@@ -1,0 +1,17 @@
+
+<import src="../../template/template"/>
+
+<view >
+    <block wx:for="{{question}}" wx:for-index="i" wx:for-item="item">
+
+        <template is="{{item.is_check==false?'question_radio':'question_check'}}"  data="{{...item}}" >
+        </template>           
+
+    </block> 
+    <view>
+        <text class='zi'>请输入您正在服用的药品名称：</text>
+        <input class='pillname'></input>
+    </view>
+    <button bindtap='commit'>提交</button>
+   
+</view>

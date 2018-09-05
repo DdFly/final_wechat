@@ -1,0 +1,60 @@
+/* pages/doctor_pages/patient_list/patient_list.wxss */
+.bg{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search_pat{
+    width: 95%; 
+    height: 80rpx;
+    border: 3rpx solid grey;
+    border-radius: 50rpx;
+    margin-top: 20rpx;
+    padding-left: 20rpx;
+    background-color: white;
+}
+.placeholder{
+    text-align: center;
+}
+
+.list{
+    width: 100%;
+}
+.pat_item{
+     width: 100%; 
+    height: 180rpx;
+    display: flex;
+    flex-direction: row;
+     /* justify-content: space-between;  */
+    align-items: center;
+    border: 2rpx solid grey;
+    background-color: white;
+    margin-top: 30rpx;
+}
+
+.pat_item>image{
+    width: 120rpx;
+    height: 120rpx;
+    margin: 0rpx 50rpx 0rpx 50rpx;
+
+}
+.pat_item>text{
+    font-size: 20px;
+    color: blue;
+    margin-left: 20%;
+    font-family: '新宋体'   
+}
+
+.content{
+    margin-top: 30rpx;
+    align-items: baseline;
+    
+}
+.content>image{
+    width: 50rpx;
+    height: 50rpx;
+    margin-right: 20rpx;
+}

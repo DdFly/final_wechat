@@ -1,0 +1,11 @@
+<!--pages/doctor_pages/check_question/check_question.wxml-->
+<import src="../../template/template"/>
+
+<view >
+    <block wx:for="{{question}}" wx:for-index="i" wx:for-item="item">
+
+        <template is="{{item.is_check==false?'question_radio':'question_check'}}"  data="{{...item}}">
+        </template>           
+    </block> 
+   
+</view>

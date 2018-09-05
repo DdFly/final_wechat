@@ -1,0 +1,52 @@
+<view class='indexView'>
+<swiper indicator-dots="{{indicatorDots}}" circular="{{circle_swiper}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image"/>
+    </swiper-item>
+  </block>
+</swiper>
+<view class='tittle'>
+    <image src='../../../image/医院.png'></image>
+    <text>{{yiyuan}}</text>
+</view>
+<view class='daohang'>
+    <!-- <view bindtap='btn1'>
+        <image src='../../../image/路径图.png'></image>
+        <text>健康规划</text>
+    </view>
+    <view bindtap='btn1'>
+        <image src='../../../image/新闻.png'></image>
+        <text>健康咨询</text>
+    </view>
+    <view bindtap='btn1'>
+        <image src='../../../image/盾牌.png'></image>
+        <text>健康保障</text>
+    </view>
+    <view bindtap='btn1'>
+        <image src='../../../image/金钱.png'></image>
+        <text>健康资本</text>
+    </view>
+    <view bindtap='btn2'>
+        <image src='../../../image/问卷调查.png'></image>
+        <text>健康问卷</text>
+    </view>
+    <view bindtap='btn1'>
+        <image src='../../../image/设置.png'></image>
+        <text>健康反馈</text>
+    </view> -->
+    <view bindtap='btn1'>
+        <image src='../../../image/问卷调查.png'>
+        
+        </image>
+        <text>填写问卷</text>
+    </view>
+    <view bindtap='btn2'>
+        <image src='../../../image/设置.png'></image>
+        <text>查看结果</text>
+    </view>
+
+</view> 
+
+</view>

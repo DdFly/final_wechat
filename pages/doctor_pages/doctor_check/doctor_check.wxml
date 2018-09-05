@@ -1,0 +1,22 @@
+<!--pages/doctor_pages/doctor_check/doctor_check.wxml-->
+
+<view class='bg'>
+    <view class='title'>
+        <image src="{{userInfo.avatarUrl}}"></image>
+        <view>
+            <text>{{userInfo.nickName}}</text>
+            <view class='winfo'>
+                <image wx:if="{{sexid==1}}" src='../../../image/boy.png'></image>
+                <image wx:elif="{{sexid==2}}" src='../../../image/girl.png'></image>
+                <text>{{userInfo.province}}</text>
+            </view>
+        </view>
+    </view>
+    <input placeholder='请输入姓名' type='text' bindinput='nameinput'></input>
+    <input placeholder='请输入年龄' type='number' bindinput='ageinput'></input>
+    <input placeholder='请输入密钥' type='text' bindinput='passinput'></input>
+    <input placeholder='请输入手机号' type='number' bindinput='phoneinput'></input>
+    <text>《用户隐私保护手册》</text>
+    <button bindtap='commit'>提交</button>
+
+</view>

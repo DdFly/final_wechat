@@ -1,0 +1,10 @@
+<!--pages/doctor_pages/disease_manage/disease_manage.wxml-->
+<import src="../../template/template"/>
+<view class="bg">
+    <view class='border'></view>
+    <block wx:for="{{dis_list2}}" wx:for-item="item">
+        <template is="disease_item" data="{{item}}">
+        </template>
+    </block>
+    <view class='border'></view>
+</view>

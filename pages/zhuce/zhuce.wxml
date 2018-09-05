@@ -1,0 +1,23 @@
+<!--index.wxml-->
+<view class='zhuce'>
+    
+    <view>
+        <text>姓名</text>
+        <input type='text' placeholder='请输入姓名' focus='true' bindinput='nameinput' value='{{name}}'></input>
+    </view>
+    <view >
+        <text>性别</text>
+        <text bindtap='sexSelect'>{{sex}}></text>
+    </view>
+    <view>
+        <text>年龄</text>
+        <input type='number' placeholder='请输入年龄' bindinput='ageinput' value='{{age}}'></input>
+    </view>
+    <view>
+        <text>手机号</text>
+        <input type='number' placeholder='请输入手机号' bindinput='phoneinput' value='{{phone}}'></input>
+    </view>
+    <navigator open-type='navigate' url=''>《用户信息隐私保护指南》</navigator>
+    <button bindtap='submit'>提交</button>
+    
+</view>

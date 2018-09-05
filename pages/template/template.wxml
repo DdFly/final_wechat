@@ -1,0 +1,94 @@
+<template name="odd">
+  <view> odd </view>
+</template>
+<template name="even">
+  <view> even </view>
+</template>
+
+
+<template name='question_check'>
+
+     <view class='item2' style="display:{{show}}">
+        <view>
+            <text class='zi' >{{id}}、{{que_text}}</text>
+            <image src='../../../image/bi.png'></image>
+            <text class='select'>[可多选]</text>
+        </view>
+        <checkbox-group class="check-group" bindchange="checkboxChange" data-id="{{id}}">
+            <label class="checkbox" wx:for="{{options_text}}" style='display:block'>
+                <checkbox disabled='{{disable}}' value="{{item.name}}" checked="{{item.checked}}" />{{item.value}}
+            </label>
+        </checkbox-group>
+    </view> 
+    <!-- <text>哈哈哈哈哈</text> -->
+
+</template>
+<template name='question_radio'>
+
+     <view class='item1' style="display:{{show}}">
+        <view >
+            <text class='zi'>{{id}}、{{que_text}}</text>
+            <image src='../../../image/bi.png' ></image>
+        </view>
+        <radio-group class="radio-group" bindchange="radioChange"  data-id="{{id}}" >
+            <label class="radio" wx:for="{{options_text}}" style="display: block">
+                <radio disabled='{{this.data.disable}}' value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+            </label>
+        </radio-group>
+    </view> 
+    <!-- <text>啦啦啦啦啦</text> -->
+</template>
+
+<template name='disease_item'>
+    <view class='dis_item' catchtap='itemclick' data-item="{{item}}" >
+        <text>{{item}}</text>
+        <image src='../../../image/edit.png'></image>       
+    </view>
+</template>
+
+<template name="patient_item">
+    <view class='pat_item'>
+        
+        <image src="{{head_url}}"></image>
+        <view class='info_content'>
+            <text>{{name}}</text>
+            <view class='content'>
+                <image wx:if="{{sex=='男'}}" src='../../../image/boy.png'></image>
+                <image wx:elif="{{sex=='女'}}" src='../../../image/girl.png'></image>
+                <text>{{age}}岁</text>
+            </view>
+        </view>
+        <text class='dis_name'>{{dis_name}}</text>
+    </view>
+</template>
+
+
+<!-- <template name="order_list">
+    <text>{{date}}</text>
+         <view class='order_item' bindtap='itemclick' wx:for="{{day_list}}" wx:for-item="item2" data-item="{{item2.care}}"> 
+            <text>{{item2.name}}</text> 
+            <text style="color:red">{{item2.dis}}</text>    
+            <text class='care_bt' style='background-color:#00b12c' bindtap='carebtn' data-care='{{item2.care}}' wx:if="{{item2.care=='True'}}">已关注</text> 
+            <text class='care_bt' bindtap='carebtn' data-care='{{item2.care}}' wx:else>关注</text>  
+        </view> 
+</template> -->
+<template name="order_list">
+         <view class='order_item' bindtap='itemclick' data-id="{{id}}"> 
+            <text>{{user_name}}</text> 
+            <text style="color:red">{{disease_name}}</text>    
+            <text class='care_bt'>查看</text>
+            <!-- <text class='care_bt' style='background-color:#00b12c' bindtap='carebtn' data-care='{{care}}' wx:if="{{care=='True'}}">已关注</text> 
+            <text class='care_bt' bindtap='carebtn' data-care='{{care}}' wx:else>关注</text>   -->
+        </view> 
+</template>
+
+<template name="question_manager">
+    <view class='question'>
+        <text>{{id}}、{{que_text}}</text>
+        <image src="../../../image/delet.png"></image>
+    </view>
+    <view class='anwser' wx:for="{{options_text}}" wx:for-item="item">
+        <text>{{item.name}}、{{item.value}}</text>
+        <image src='../../../image/delete.png'></image>
+    </view>
+</template>

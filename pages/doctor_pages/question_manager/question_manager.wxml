@@ -1,0 +1,10 @@
+<!--pages/doctor_pages/question_manager/question_manager.wxml-->
+<import src="../../template/template"/>
+
+<view class='bg'>
+    <view class='item' wx:for="{{question}}" wx:for-item="item">
+        <template is="question_manager" data="{{...item}}"></template>        
+    </view>
+    <button class='add_btn' bindtap='add_click'>添加</button>
+
+</view>

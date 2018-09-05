@@ -1,0 +1,10 @@
+<!--pages/doctor_pages/Q_list/Q_list.wxml-->
+<import src="../../template/template"/>
+
+<view class='bg'>
+
+    <block wx:for="{{order_list}}" wx:for-item="item">
+        <template is="order_list" data="{{...item}}"></template>
+    </block> 
+    
+</view>

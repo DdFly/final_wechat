@@ -1,0 +1,22 @@
+<!--pages/doctor_pages/add_question/add_question.wxml-->
+<view class='bg'>
+    <view class='view1'>
+        <input class='id_input' placeholder='题号'></input>
+        <input placeholder='输入问题'></input>
+    </view>
+    <view class='view2'>
+        <text>选项</text>
+        <view class='view2_list'>
+            <view>
+            </view>
+            <button>增加选项</button>
+        </view>
+    </view>
+    <view class='view3'>
+        <text>是否多选</text>
+        <switch></switch>
+    </view>
+    <button bindtap='complete'>完成</button>
+
+
+</view>

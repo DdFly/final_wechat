@@ -1,0 +1,42 @@
+<!--pages/doctor_pages/D_index/D_index.wxml-->
+
+<view class='contain'>
+    <view class='title'>
+        <view>
+            <image src='{{userInfo.avatarUrl}}'></image>
+            <text>
+                {{doctor_name}}
+            </text>
+        </view>
+        <text>
+            {{date}}
+        </text>
+    </view>
+     <view class='btn'>
+        <view class='btn_item' bindtap='btn1'>
+            <image></image>
+            <view class='btn_text'>
+                <text>问卷查看</text>
+            </view>
+        </view>
+        <view class='btn_item'  bindtap='btn2'>
+            <image></image>
+            <view class='btn_text'>
+                <text>疾病管理</text>
+            </view>
+        </view>
+        <view class='btn_item' bindtap='btn3'>
+            <image></image>
+            <view class='btn_text'>
+                <text>病情关注</text>
+            </view>
+        </view>
+        <view class='btn_item' bindtap='btn4'>
+            <image></image>
+            <view class='btn_text'>
+                <text>问卷管理</text>
+            </view>
+        </view>
+    </view> 
+
+</view>
